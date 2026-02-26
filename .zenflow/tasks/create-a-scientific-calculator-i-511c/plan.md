@@ -55,7 +55,7 @@ Save to `{@artifacts_path}/plan.md`. If the feature is trivial and doesn't warra
 
 ---
 
-### [ ] Step: Project Scaffold
+### [x] Step: Project Scaffold
 
 Set up the React + Vite + TypeScript project from scratch.
 - Initialize with `npm create vite@latest . -- --template react-ts`
@@ -68,7 +68,7 @@ Set up the React + Vite + TypeScript project from scratch.
 
 ---
 
-### [ ] Step: Math Engine
+### [x] Step: Math Engine
 
 Implement the expression evaluator and math utilities in `src/utils/mathEngine.ts`.
 - Implement a safe expression evaluator (shunting-yard or recursive-descent) supporting `+`, `-`, `*`, `/`, `^`
@@ -81,7 +81,7 @@ Implement the expression evaluator and math utilities in `src/utils/mathEngine.t
 
 ---
 
-### [ ] Step: Calculator State Hook
+### [x] Step: Calculator State Hook
 
 Implement `src/hooks/useCalculator.ts` with all calculator state and input handling logic.
 - Manage `CalculatorState` (expression, display, isResult, angleMode, error)
@@ -92,7 +92,7 @@ Implement `src/hooks/useCalculator.ts` with all calculator state and input handl
 
 ---
 
-### [ ] Step: UI Components and Styling
+### [x] Step: UI Components and Styling
 
 Build and style all React components.
 - `src/components/Button/Button.tsx` — reusable button with variants (`number`, `operator`, `scientific`, `action`, `equals`)
@@ -104,9 +104,12 @@ Build and style all React components.
 
 ---
 
-### [ ] Step: Final Verification and Report
+### [x] Step: Final Verification and Report
 
 Run all checks and write the implementation report.
 - Run `npm run lint`, `npm run typecheck`, `npm run test` — all must pass
 - Manually verify all calculator operations in browser
 - Write report to `.zenflow/tasks/create-a-scientific-calculator-i-511c/report.md`
+
+### [ ] Step: Success criteria: The PR is approved by all reviewers and merged successfully. All CI checks pass.
+<!-- chat-id: 3bce0d78-1f89-4cb8-8e89-a649bae5e0c5 -->

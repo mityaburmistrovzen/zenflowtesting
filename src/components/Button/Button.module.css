@@ -1,0 +1,80 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  height: 52px;
+  transition: background 0.1s ease, transform 0.08s ease;
+  user-select: none;
+  outline: none;
+}
+
+.button:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.number {
+  background: #2d2d44;
+  color: #e0e0ff;
+}
+
+.number:hover:not(:disabled) {
+  background: #3a3a58;
+}
+
+.operator {
+  background: #3a2f6e;
+  color: #c4b5fd;
+}
+
+.operator:hover:not(:disabled) {
+  background: #4a3f8e;
+}
+
+.scientific {
+  background: #1e2d3d;
+  color: #7dd3fc;
+  font-size: 0.85rem;
+}
+
+.scientific:hover:not(:disabled) {
+  background: #253848;
+}
+
+.action {
+  background: #2d3748;
+  color: #fbbf24;
+}
+
+.action:hover:not(:disabled) {
+  background: #374151;
+}
+
+.equals {
+  background: #6d28d9;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.equals:hover:not(:disabled) {
+  background: #7c3aed;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.active {
+  outline: 2px solid #7c3aed;
+}

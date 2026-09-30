@@ -1,0 +1,14 @@
+name: Hops test
+on:
+  workflow_dispatch:
+    inputs:
+      note:
+        description: Free text
+        required: false
+        default: hello
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hops test run, note=${{ inputs.note }}"
+      - run: sleep 90
